@@ -1,0 +1,10 @@
+{
+  "name": "crypto-cars-dapp",
+  "version": "0.0.1",
+  "description": "Crypto Cars project - our first DApp for test purposes.",
+  "main": "index.js",
+  "repository": "https://github.com/PragmaticDLT/crypto-cars-dapp.git",
+  "author": "Max Martyn <max.martyn@pragmaticdlt.com>",
+  "license": "MIT",
+  "private": false
+}
