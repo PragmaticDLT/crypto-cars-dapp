@@ -7,7 +7,9 @@
   "author": "Max Martyn <max.martyn@pragmaticdlt.com>",
   "license": "MIT",
   "private": false,
-  "dependencies": {},
+  "dependencies": {
+    "openzeppelin-solidity": "^1.10.0"
+  },
   "devDependencies": {
     "ganache-cli": "^6.1.0",
     "truffle": "^4.1.11"
