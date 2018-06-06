@@ -1,6 +1,8 @@
-**PragmaticDLT Crypto Cars DApp**
+#crypto-cars-dapp
 
-**Setup**
+PragmaticDLT Crypto Cars DApp
+
+##Setup
 
 1. Install all local dependencies use `yarn` or `npm i`.
 
