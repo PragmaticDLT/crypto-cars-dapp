@@ -16,11 +16,13 @@ contract CarManager is CarFactory {
                 counter++;
             }
         }
+
         return carIds;
     }
 
     function getCarById(uint _carId) external view returns(string name, string outerColor, string innerColor) {
         Car car = cars[_carId];
+
         return (car.name, car.outerColor, car.innerColor);
     }
 

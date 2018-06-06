@@ -18,6 +18,7 @@ contract CarOwnership is CarFactory, ERC721Basic {
         ownerCarCount[_to] = ownerCarCount[_to].add(1);
         ownerCarCount[msg.sender] = ownerCarCount[msg.sender].sub(1);
         carToOwner[_tokenId] = _to;
+
         emit Transfer(_from, _to, _tokenId);
     }
 
@@ -27,6 +28,7 @@ contract CarOwnership is CarFactory, ERC721Basic {
 
     function approve(address _to, uint256 _tokenId) public onlyOwner() {
         carApprovals[_tokenId] = _to;
+
         emit Approval(msg.sender, _to, _tokenId);
     }
 

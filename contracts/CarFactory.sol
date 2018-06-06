@@ -18,10 +18,6 @@ contract CarFactory is Ownable {
 
     mapping (address => uint) ownerCarCount;
 
-    /*function onlyOwnerOf(uint256 _tokenId) public view returns (address _owner) {
-        return carToOwner[_tokenId];
-    }*/
-
     function _createCar(string _name, string _outerColor, string _innerColor) internal {
         uint id = cars.push(Car(_name, _outerColor, _innerColor));
         carToOwner[id] = msg.sender;
@@ -30,7 +26,6 @@ contract CarFactory is Ownable {
     }
 
     function createNewCar(string _name, string _outerColor, string _innerColor) public {
-        // require(ownerCarCount[msg.sender] == 0);
         _createCar(_name, _outerColor, _innerColor);
     }
 }
