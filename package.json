@@ -1,12 +1,16 @@
 {
   "name": "crypto-cars-dapp",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Crypto Cars project - our first DApp for test purposes.",
   "main": "index.js",
   "repository": "https://github.com/PragmaticDLT/crypto-cars-dapp.git",
   "author": "Max Martyn <max.martyn@pragmaticdlt.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "migrate": "truffle migrate --reset",
+    "start-ganache": "ganache-cli -p 7545 -m action govern advice charge sample size ethics nature insect ring waste episode"
+  },
   "dependencies": {
     "openzeppelin-solidity": "^1.10.0"
   },
