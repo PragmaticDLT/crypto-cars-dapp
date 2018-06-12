@@ -21,7 +21,7 @@ contract CarManager is CarFactory {
     }
 
     function getCarById(uint _carId) external view returns(string name, string outerColor, string innerColor) {
-        Car car = cars[_carId];
+        Car storage car = cars[_carId];
 
         return (car.name, car.outerColor, car.innerColor);
     }

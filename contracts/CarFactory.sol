@@ -25,7 +25,8 @@ contract CarFactory is Ownable {
         emit NewCar(id, _name, _outerColor, _innerColor);
     }
 
-    function createNewCar(string _name, string _outerColor, string _innerColor) public {
+    function createNewCar(string _name, string _outerColor, string _innerColor) external payable {
+        require(msg.value == 1 ether);
         _createCar(_name, _outerColor, _innerColor);
     }
 }

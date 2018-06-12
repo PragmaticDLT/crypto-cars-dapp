@@ -8,8 +8,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "migrate": "truffle migrate --reset",
-    "start-ganache": "ganache-cli -p 7545 -m action govern advice charge sample size ethics nature insect ring waste episode"
+    "compile": "truffle compile",
+    "migrate": "truffle migrate --network development --reset",
+    "start-ganache": "ganache-cli -p 7545"
   },
   "dependencies": {
     "openzeppelin-solidity": "^1.10.0"
